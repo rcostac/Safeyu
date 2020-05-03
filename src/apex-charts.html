@@ -1,0 +1,115 @@
+---
+layout: default
+parent: "charts"
+activePage: "apex-charts"
+pageTitle: "apexcharts"
+plugins: ["apexcharts"]
+---
+
+<div class="row">
+  <div class="col-xl-8">
+    {%- include income-express.htm -%}
+  </div>
+  <div class="col-xl-4">
+    {%- include revenue.htm -%}
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xl-6">
+    {%- include user-acuisition.htm -%}
+  </div>
+
+  <!-- Sessions by Device -->
+  <div class="col-xl-6">
+    {%- include sessions-device.htm -%}
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xl-4">
+    <!-- Current Users  -->
+    <div class="card card-default">
+      <div class="card-header">
+        <h2>Current Users</h2>
+        <span>Realtime</span>
+      </div>
+      <div class="card-body ">
+        <div id="barchartlg2"></div>
+      </div>
+      <div class="card-footer bg-white py-4">
+        <a href="#" class="text-uppercase">Current Users Overview</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-xl-4">
+    <!-- Pie Chart  -->
+    <div class="card card-default">
+      <div class="card-header">
+        <h2>Pie Chart</h2>
+      </div>
+      <div class="card-body p-xl-7">
+        <div id="simple-pie-chart" class="d-flex justify-content-center"></div>
+      </div>
+
+    </div>
+  </div>
+  <div class="col-xl-4">
+    <!-- User -->
+    <div class="card card-default">
+      <div class="card-header">
+        <h2>Users</h2>
+      </div>
+      <div class="card-body pb-0">
+        <div class="bg-primary d-flex justify-content-between flex-wrap p-5 text-white align-items-lg-end">
+          <div class="d-flex flex-column">
+            <span class="h3 text-white">325,980</span>
+            <span>vs 275,900 (prev)</span>
+          </div>
+          <div>
+            <span>45%</span>
+            <i class="mdi mdi-arrow-up-bold"></i>
+          </div>
+        </div>
+        <div id="line-chart-1"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xl-4">
+    <!-- Radar Chart  -->
+    <div class="card card-default">
+      <div class="card-header">
+        <h2>Radar Chart</h2>
+      </div>
+      <div class="card-body pb-0">
+        <div id="simple-rader-chart"></div>
+      </div>
+    </div>
+  </div>
+  <div class="col-xl-4">
+    <!-- Horizontal Bar Chart  -->
+    <div class="card card-default">
+      <div class="card-header">
+        <h2>Horizontal Bar Chart</h2>
+      </div>
+      <div class="card-body pb-0">
+        <div id="horizontal-bar-chart"></div>
+      </div>
+    </div>
+  </div>
+  <div class="col-xl-4">
+    <!-- Aria Chart  -->
+    <div class="card card-default">
+      <div class="card-header">
+        <h2>Aria Chart</h2>
+      </div>
+      <div class="card-body pb-0">
+        <div id="aria-chart"></div>
+      </div>
+    </div>
+  </div>
+
+</div>

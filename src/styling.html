@@ -1,0 +1,96 @@
+---
+layout: default
+
+parent: "customization"
+sub_parent: ""
+activePage: "styling"
+pageTitle: "style customization"
+plugins: ['prism']
+---
+
+<!--================ Style ================-->
+<div class="card card-default">
+  <div class="card-header">
+    <h1 class="mb-1">How to customize style </h1>
+    <p class="flex-basis-100"> There are 2 basic ways to customize this theme.</p>
+  </div>
+  <div class="card-body">
+    <h3 class="mb-2">i. Compiled CSS</h3>
+    <p>If you want to use <em>Mono Dashboard</em> "as is", or only need limited customization, feel free to simply
+      include the compiled
+      <code>mono.css</code> or <code>mono.min.css</code> file located in the <code>dist/assets/css</code> directory.
+    </p>
+
+    <h3 class="mt-4 mb-2">ii. Customizing SCSS</h3>
+    <p>This is more versatile and sustainable way to customize <em>Mono Dashboard</em>. The 2 major benefits of this
+      strategy are using variable overrides (<code>_variables.scss</code>) to easily customize theme styles, plus you
+      never have to touch Bootstrap source, meaning future updates will be much, much, simpler. For more information, please see the official <a class="font-weight-bold" href="https://getbootstrap.com/docs/4.3/getting-started/theming/" target="_blank"> Bootstrap theming.</a></p>
+<pre class="language-html">
+<code>
+// Colors variable
+$primary:                   #0074d9;
+$secondary:                 #ff4136;
+
+//Modify map
+$theme-colors: (
+  (
+    "primary":                $primary,
+    "secondary":              $secondary
+  )
+);
+</code>
+</pre>
+
+  </div>
+</div>
+
+
+<!--================ Fonts ================-->
+<div class="card card-default">
+  <div class="card-header">
+    <h1 class="mb-1">How to change font</h1>
+    <p class="flex-basis-100"> If you wish to add/change the site fonts, please take a look in the top of <code>html</code> file of the website and replace this line And go <code>_variables.scss</code> to change variable $font-family-base</p>
+  </div>
+    <div class="card-body pt-4">
+<pre class="language-html"><code>
+// GOOGLE FONT
+&lt;link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet"&gt;
+
+//CSS
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+//SCSS Variable
+$font-family-base: 'Open Sans', sans-serif
+</code></pre>
+  </div>
+</div>
+
+<!--================ Direction ================-->
+<div class="card card-default">
+  <div class="card-header">
+    <h1 class="mb-1">How to change Direction</span> </h1>
+    <p class="flex-basis-100">To use RTL direction set the dir='rtl' in <code>&lt;html></code> and replace
+      <strong>assets/css/mono.css</strong> with <strong>assets/css/mono.rtl.css</strong> inside &lt;head></p>
+  </div>
+  <div class="card-body pt-4">
+    <pre class="language-html"><code>
+&lt;!-- Rtl Direction -->
+&lt;html dir="rtl">&lt;/html>
+
+&lt;!-- Stylesheet URL -->
+&lt;link id="main-css-href" rel="stylesheet" href="assets/css/mono.rtl.css">
+</code>
+</pre>
+
+  </div>
+  <!-- Buttons -->
+  <div class="d-flex justify-content-start pb-6 px-6">
+    <a href="sidebar-customization.html" class="btn btn-light btn-pill">
+      <i class="mdi mdi-arrow-left"></i>
+      sidebar customization
+    </a>
+  </div>
+</div>

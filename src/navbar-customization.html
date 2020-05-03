@@ -1,0 +1,165 @@
+---
+layout: default
+parent: "customization"
+sub_parent: ""
+activePage: "navbar"
+pageTitle: "navbar customization"
+plugins: ['prism']
+---
+
+              <div class="card card-default">
+                <div class="card-header">
+                  <h1 class="mb-1">How to customize navbar colors</h1>
+                  <p class="flex-basis-100"> Mono has 4 navbar colors: <strong>navbar light</strong>, <strong>navbar dark</strong>, <strong>navbar primay</strong> and <strong>navbar transparent</strong>.</p>
+                </div>
+                <div class="card-body">
+                  <!-- Navbar Light -->
+                  <h2 class="mb-1">Navbar Light</h2>
+                  <p>Navbar light is a default header color of <strong> Mono </strong>.</p>
+                  <pre class="language-html">
+<code>
+&lt;header class="main-header" id="header">
+  &lt;nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+    &lt;!-- Sidebar toggle button -->
+    &lt;button id="sidebar-toggler" class="sidebar-toggle">
+      &lt;span class="sr-only">Toggle navigation&lt;/span>
+    &lt;/button>
+
+    &lt;span class="page-title">Page Titile&lt;/span>
+
+    &lt;div class="navbar-right ">
+
+      &lt;!-- Your code here -->
+
+    &lt;/div>
+  &lt;/nav>
+&lt;/header>
+</code>
+                  </pre>
+                  <br><br>
+
+                  <!-- Navbar Dark -->
+                  <h2 class="mb-1">Navbar Dark </h2>
+                  <p>Add class
+                    <code>navbar-dark</code> to
+                    <code>&lt;nav id="navbar"&gt;</code> and remove class <code> navbar-light </code> or <code> navbar-primary </code> or <code> navbar-transparent </code> if it was added before.</p>
+
+                  <pre class="language-html mb-4">
+<code >
+&lt;header class="main-header" id="header">
+  &lt;nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
+    &lt;!-- Sidebar toggle button -->
+    &lt;button id="sidebar-toggler" class="sidebar-toggle">
+      &lt;span class="sr-only">Toggle navigation&lt;/span>
+    &lt;/button>
+
+    &lt;span class="page-title">Page Titile&lt;/span>
+
+    &lt;div class="navbar-right ">
+
+      &lt;!-- Your code here -->
+
+    &lt;/div>
+  &lt;/nav>
+&lt;/header>
+</code>
+                  </pre>
+                  <br><br>
+
+                  <!-- Navbar Primary -->
+                  <h2 class="mb-1">Navbar Primary </h2>
+                  <p>Add class
+                    <code> navbar-primary </code> to
+                    <code>&lt;nav id="navbar"&gt;</code> and remove class <code> navbar-light </code> or <code> navbar-dark </code> or <code> navbar-transparent </code> if it was added before.</p>
+
+                  <pre class="language-html mb-4"><code >
+&lt;header class="main-header" id="header">
+  &lt;nav class="navbar navbar-expand-lg navbar-primary" id="navbar">
+    &lt;!-- Sidebar toggle button -->
+    &lt;button id="sidebar-toggler" class="sidebar-toggle">
+      &lt;span class="sr-only">Toggle navigation&lt;/span>
+    &lt;/button>
+
+    &lt;span class="page-title">Page Titile&lt;/span>
+
+    &lt;div class="navbar-right ">
+
+      &lt;!-- Your code here -->
+
+    &lt;/div>
+  &lt;/nav>
+&lt;/header>
+</code></pre>
+<br><br>
+                  <!-- Navbar Transparent -->
+                  <h2 class="mb-1">Navbar Transparent </h2>
+                  <p>Add class
+                    <code> navbar-transparent </code> to
+                    <code>&lt;nav id="navbar"&gt;</code> and remove class <code> navbar-light </code> or <code> navbar-dark </code> or <code> navbar-primary </code> if it was added before.</p>
+
+                  <pre class="language-html mb-4"><code >
+&lt;header class="main-header" id="header">
+  &lt;nav class="navbar navbar-expand-lg navbar-transparent" id="navbar">
+    &lt;!-- Sidebar toggle button -->
+    &lt;button id="sidebar-toggler" class="sidebar-toggle">
+      &lt;span class="sr-only">Toggle navigation&lt;/span>
+    &lt;/button>
+
+    &lt;span class="page-title">Page Titile&lt;/span>
+
+    &lt;div class="navbar-right ">
+
+      &lt;!-- Your code here -->
+
+    &lt;/div>
+  &lt;/nav>
+&lt;/header>
+</code></pre>
+              </div>
+
+              </div>
+
+              <!-- Navbar Positions -->
+              <div class="card card-default">
+                <div class="card-header">
+                  <h1 class="mb-1">How to customize navbar positions</h1>
+                  <p class="flex-basis-100"> Mono has 2 navbar positions: <strong>navbar fixed</strong> and <strong>navbar static</strong>. </p>
+                </div>
+                <div class="card-body">
+
+                  <!-- Navbar Fixed -->
+                  <h2 class="mb-1">Navbar Fixed </h2>
+                  <p>Navbar fixed is a default positions of <strong> Mono </strong>.</p>
+                  <pre class="language-html mb-4">
+<code >
+&lt;body id="body" class="navbar-fixed"&gt;
+</code>
+                  </pre>
+<br><br>
+                  <!-- Navbar Static -->
+                  <h2 class="mb-1">Navbar Static </h2>
+                  <p>Add class <code>navbar-static</code> to
+                    <code>&lt;body id="body"&gt;</code> and remove class <code> navbar-fixed </code>.</p>
+                  <pre class="language-html mb-4">
+<code >
+&lt;body id="body" class="navbar-static"&gt;
+</code>
+                  </pre>
+<br>
+                </div>
+
+                <!-- Buttons -->
+                <div class="d-flex flex-column flex-lg-row justify-content-between pb-6 px-6">
+                  <a href="getting-started.html" class="btn btn-light btn-pill mb-4 mb-lg-0">
+                    <i class="mdi mdi-arrow-left"></i>
+                    getting started
+                  </a>
+
+                  <a href="sidebar-customization.html" class="btn btn-primary btn-pill">sidebar customization
+                    <i class="mdi mdi-arrow-right"></i>
+                  </a>
+                </div>
+
+              </div>
+
+

@@ -1,0 +1,83 @@
+
+                    <script src="assets/plugins/jquery/jquery.min.js"></script>
+                    <script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+                    <script src="assets/plugins/simplebar/simplebar.min.js"></script>
+                    <script src="https://unpkg.com/hotkeys-js/dist/hotkeys.min.js"></script>
+
+                    {% for plugin in page.plugins %}
+                    {% case plugin %}
+                    {% when 'google-map-apis' %}
+                    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCn8TFXGg17HAUcNpkwtxxyT9Io9B_NcM" defer></script>
+                    {% when 'toaster' %}
+                    <script src="assets/plugins/toaster/toastr.min.js"></script>
+
+                    {% when 'ladda' %}
+                    <script src="assets/plugins/ladda/spin.min.js"></script>
+                    <script src="assets/plugins/ladda/ladda.min.js"></script>
+                    {% when 'quilljs' %}
+                    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+                    {% when 'codemirror' %}
+                    <script src="assets/plugins/codemirror/codemirror.js"></script>
+                    <script src="assets/plugins/codemirror/mode/xml/xml.js"></script>
+                    <script src="assets/plugins/codemirror/mode/css/css.js"></script>
+                    {% when 'dropzone' %}
+                    <script src="assets/plugins/dropzone/dropzone.js"></script>
+                    {% when 'jquery-mask-input' %}
+                    <script src="assets/plugins/jquery-mask-input/jquery.mask.min.js"></script>
+                    {% when 'select2' %}
+                    <script src="assets/plugins/select2/js/select2.min.js"></script>
+                    {% when 'jvectormap' %}
+                    <script src="assets/plugins/jvectormap/jquery-jvectormap-2.0.3.min.js"></script>
+                    <script src="assets/plugins/jvectormap/jquery-jvectormap-world-mill.js"></script>
+                    <script src="assets/plugins/jvectormap/jquery-jvectormap-us-aea.js"></script>
+                    {% when 'daterangepicker' %}
+                    <script src="assets/plugins/daterangepicker/moment.min.js"></script>
+                    <script src="assets/plugins/daterangepicker/daterangepicker.js"></script>
+                    <script>
+                      jQuery(document).ready(function() {
+                        jQuery('input[name="dateRange"]').daterangepicker({
+                        autoUpdateInput: false,
+                        singleDatePicker: true,
+                        locale: {
+                          cancelLabel: 'Clear'
+                        }
+                      });
+                        jQuery('input[name="dateRange"]').on('apply.daterangepicker', function (ev, picker) {
+                          jQuery(this).val(picker.startDate.format('MM/DD/YYYY'));
+                        });
+                        jQuery('input[name="dateRange"]').on('cancel.daterangepicker', function (ev, picker) {
+                          jQuery(this).val('');
+                        });
+                      });
+                    </script>
+                    {% when 'apexcharts' %}
+                    <script src="assets/plugins/apexcharts/apexcharts.js"></script>
+                    {% when 'dataTables' %}
+                    <script src="assets/plugins/DataTables/DataTables-1.10.18/js/jquery.dataTables.min.js"></script>
+                    {% when 'prism' %}
+                    <script src="assets/plugins/prism/prism.js"></script>
+                    {% when 'owl-carousel' %}
+                    <script src="assets/plugins/owl-carousel/owl.carousel.min.js"></script>
+                    {% when 'full_calendar' %}
+                    <script src='assets/plugins/fullcalendar/core-4.3.1/main.min.js'></script>
+                    <script src='assets/plugins/fullcalendar/daygrid-4.3.0/main.min.js'></script>
+                    <script src='assets/js/calendar.js'></script>
+                    {% when 'circle_progress' %}
+                    <script src="assets/plugins/circle-progress/circle-progress.js"></script>
+                    {% endcase %}
+                    {% endfor %}
+                    <script src="assets/js/mono.js"></script>
+                    <script src="assets/js/chart.js"></script>
+                    <script src="assets/js/map.js"></script>
+                    <script src="assets/js/custom.js"></script>
+
+                    {% if site.environment == "demo" %}
+                    <!-- JS for Demo -->
+                    <script src="assets/options/optionswitcher.js"></script>
+                    {% endif %}
+
+
+                    <!-- {% for user in page.users %}
+                    <div>{{ user }}</div>
+                    {% endfor %} -->
+

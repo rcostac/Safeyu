@@ -1,0 +1,177 @@
+---
+layout: default
+parent: "customization"
+sub_parent: ""
+activePage: "sidebar"
+pageTitle: "sidebar customization"
+plugins: ['prism']
+---
+
+<!--================ Sidebar Colors ================-->
+<div class="card card-default">
+  <div class="card-header">
+    <h1 class="mb-1">How to customize sidebar colors </h1>
+    <p class="flex-basis-100"> Mono has 2 sidebar colors: <strong>sidebar light</strong> and <strong>sidebar dark</strong>.</p>
+  </div>
+  <div class="card-body">
+    <!-- Sidebar Dark -->
+    <h2 class="mb-3">Sidebar Dark</h2>
+    <p class="mb-3">Sidebar dark is a default sidebar color. You can use image with <strong>sidebar dark</strong> following the code bellow.</p>
+<pre class="language-html"><code>
+//Default Sidebar Dark
+&lt;aside class="sidebar-dark" id="left-sidebar">&lt;/aside>
+
+//For image in sidebar
+&lt;aside class="sidebar-dark" id="left-sidebar" style="background-image:url(../assets/img/sidebar/sidebar-bg-04.jpg)">&lt;/aside>
+
+</code></pre>
+    <br><br>
+
+    <!-- Sidebar Light -->
+    <h2 class="mb-3">Sidebar Light</h2>
+    <p>Add class
+      <code>sidebar-light</code> to
+      <code>&lt;aside id="left-sidebar"&gt;</code> and remove class <code> sidebar-light </code>.</p>
+<pre class="language-html"><code>
+//Sidebar Light
+&lt;aside class="sidebar-light" id="left-sidebar">&lt;/aside>
+
+//For image in sidebar
+&lt;aside class="sidebar-light" id="left-sidebar" style="background-image:url(../assets/img/sidebar/sidebar-bg-04.jpg)">&lt;/aside>
+
+</code></pre>
+  </div>
+</div>
+
+
+<!--====================== Sidebar Positions =====================-->
+<div class="card card-default">
+  <div class="card-header">
+    <h1 class="mb-1">How to customize sidebar Position </h1>
+    <p class="flex-basis-100"> Mono has 2 positions: <strong>navbar fixed</strong> and <strong>navbar static</strong>.</p>
+  </div>
+  <div class="card-body">
+
+    <!-- Sidebar Fixed  -->
+    <h2 class="mb-3">Sidebar Fixed</h2>
+
+    <p class="mb-3">Sidebar fixed position is default position.</p>
+
+      <pre class="language-html">
+<code>
+//Sidebar Fixed
+&lt;body class="sidebar-fixed" id="body">&lt;/body>
+</code>
+</pre>
+      <br><br>
+
+      <!-- Sidebar Static  -->
+    <h2 class="mb-3">Sidebar Static</h2>
+
+    <p>Add class <code>sidebar-static</code> to <code>&lt;body id="body"&gt;</code> and remove class <code> sidebar-fixed</code>.</p>
+
+      <pre class="language-html"><code>
+//Sidebar Static
+&lt;body class="sidebar-static" id="body">&lt;/body>
+</code></pre>
+      <br><br>
+
+  </div>
+</div>
+
+<!--====================== Sidebar Navigation Style ================-->
+<div class="card card-default">
+  <div class="card-header">
+    <h1 class="mb-1">How to customize sidebar navigation styles </h1>
+    <p class="flex-basis-100"> Mono has 3 navigation styles: <strong>expanded</strong>, <strong>minified</strong>, <strong>offcanvas</strong>.
+    </p>
+  </div>
+  <div class="card-body">
+
+    <!-- Sidebar Expanded  -->
+    <h2 class="mb-3">Sidebar Expanded</h2>
+
+    <p class="mb-3">Sidebar Expanded is the default navigation style.</p>
+
+      <pre class="language-html">
+<code>
+//Sidebar Exapnded
+&lt;body class="sidebar-fixed" id="body">&lt;/body>
+</code></pre>
+      <br><br>
+
+      <!-- Sidebar Minified  -->
+    <h2 class="mb-3">Sidebar Minified</h2>
+
+    <p>Add class <code>sidebar-minified</code> to <code>&lt;body id="body"&gt;</code>.</p>
+
+      <pre class="language-html"><code>
+//Sidebar Static
+&lt;body class="sidebar-minified" id="body">&lt;/body>
+</code></pre>
+      <br><br>
+
+      <!-- Sidebar Offcanvas  -->
+    <h2 class="mb-3">Sidebar Offcanvas</h2>
+
+    <p>For<strong> sidebar fixed offcanvas</strong> Add class <code>sidebar-fixed-offcanvas sidebar-collapse</code> to <code>&lt;body id="body"&gt;</code> and for <strong> sidebar static offcanvas </strong> Add class <code>sidebar-static-offcanvas sidebar-collapse</code> to <code>&lt;body id="body"&gt;</code>.</p>
+
+      <pre class="language-html">
+<code>
+//Sidebar Fixed Offcanvas
+&lt;body class="sidebar-fixed-offcanvas sidebar-collapse" id="body">&lt;/body>
+
+//Sidebar Static Offcanvas
+&lt;body class="sidebar-static-offcanvas sidebar-collapse" id="body">&lt;/body>
+</code>
+</pre>
+      <br><br>
+
+  </div>
+</div>
+
+
+<!--================ Sidebar Without Footer  ================-->
+<div class="card card-default">
+  <div class="card-header">
+    <h1 class="mb-1">How to remove footer from sidebar</h1>
+    <p class="flex-basis-100 text-color"> Sidebar comes with a footer by default. If you want to remove the footer you have to
+    remove the class <code>sidebar-with-footer</code> from <code>&lt;div id="sidebar"&gt;</code> and delete html markup of sidebar footer inside the sidebar.</p>
+
+  </div>
+  <div class="card-body">
+      <pre class="language-html"><code>
+//Sidebar
+&lt;div class="sidebar" id="sidebar">&lt;/div>
+
+//Delete this Markup
+&lt;div class="sidebar-footer">
+  &lt;div class="sidebar-footer-content">
+    &lt;ul class="d-flex">
+      &lt;li>
+        &lt;a href="user-account-settings.html" data-toggle="tooltip" title="" data-original-title="Profile settings">&lt;i
+            class="mdi mdi-settings">&lt;/i>&lt;/a>&lt;/li>
+      &lt;li>
+        &lt;a href="#" data-toggle="tooltip" title="" data-original-title="No chat messages">&lt;i
+            class="mdi mdi-chat-processing">&lt;/i>&lt;/a>
+      &lt;/li>
+    &lt;/ul>
+  &lt;/div>
+&lt;/div>
+
+</code></pre>
+
+  </div>
+
+  <!-- Button -->
+  <div class="d-flex flex-column flex-lg-row justify-content-between pb-6 px-6">
+    <a href="navbar-customization.html" class="btn btn-light btn-pill mb-4 mb-lg-0">
+      <i class="mdi mdi-arrow-left"></i>
+      navbar customization
+    </a>
+
+    <a href="styling.html" class="btn btn-primary btn-pill">Style customization
+      <i class="mdi mdi-arrow-right"></i>
+    </a>
+  </div>
+</div>

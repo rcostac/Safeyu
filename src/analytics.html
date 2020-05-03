@@ -1,0 +1,104 @@
+---
+layout: default
+parent: "home_Analytics"
+activePage: "analytics"
+pageTitle: "analytics"
+plugins: ["apexcharts", "jvectormap", "slimscroll", "daterangepicker"]
+---
+
+                <!-- Analytics Status -->
+                <div class="row justify-content-between mb-5 ">
+                  <div class="col-lg-6">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="mini-status">
+                          <div class="text-content">
+                            <span class="title">my income</span>
+                            <span class="status text-primary"><i class="mdi mdi-currency-usd"></i>47,171</span>
+                          </div>
+                          <div class="chart-content">
+                            <div id="status-sm-chart-01"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="mini-status">
+                          <div class="text-content ">
+                            <span class="title">site traffic</span>
+                            <span class="status text-success"><i class="mdi mdi-progress-upload"></i>45%</span>
+                          </div>
+                          <div class="chart-content">
+                            <div id="status-sm-chart-02"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="mini-status">
+                          <div class="text-content">
+                            <span class="title">site orders</span>
+                            <span class="status text-info"><i class="mdi mdi-cart"></i>2447</span>
+                          </div>
+                          <div class="chart-content">
+                            <div id="status-sm-chart-03"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 d-flex justify-content-xl-end flex-column flex-wrap align-items-lg-end">
+                    <div id="mini-status-range" class="date-range date-range-lg bg-white">
+                      <span class="date-holder text-dark"></span>
+                      <i class="mdi mdi-menu-down"></i>
+                    </div>
+                    <span class="time-zone">Timezone: (+06:00) Asia - Dhaka</span>
+                  </div>
+                </div>
+
+
+                <!-- User Sessions Bounce -->
+                <div class="row">
+                  <div class="col-xl-4">
+                    {% include user.htm %}
+                  </div>
+                  <div class="col-xl-4">
+                    {% include session.htm %}
+                  </div>
+                  <div class="col-xl-4">
+                    {% include bounce-rate.htm %}
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-xl-6">
+                    {% include user-acuisition.htm %}
+                  </div>
+
+                  <!-- Sessions by Device -->
+                  <div class="col-xl-6">
+                    {% include sessions-device.htm %}
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-xl-4">
+                    {% include us-vector-map.htm %}
+                  </div>
+                  <div class="col-xl-4">
+                    {% include page-view.htm %}
+                  </div>
+                  <div class="col-xl-4">
+                    <!-- Current Users  -->
+                    <div class="card card-default">
+                      <div class="card-header">
+                        <h2>Current Users</h2>
+                        <span>Realtime</span>
+                      </div>
+                      <div class="card-body">
+                        <div id="barchartlg2"></div>
+                      </div>
+                      <div class="card-footer bg-white py-4">
+                        <a href="#" class="text-uppercase">Current Users Overview</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>

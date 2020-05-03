@@ -1,0 +1,87 @@
+[
+  {
+    "name": "home_bussiness",
+    "label": "Dashboard",
+    "iconClass": "mdi mdi-briefcase-account-outline",
+    "link": "index.html",
+    "notParent": "main_li"
+
+  },
+  {
+    "name": "chat",
+    "label": "Vehicles",
+    "iconClass": "flaticon-null",
+    "link": "chat.html",
+    "notParent": "main_li"
+  },
+  {
+    "name": "drivers",
+    "label": "Drivers",
+    "iconClass": "flaticon-driving",
+    "link": "drivers.html",
+    "notParent": "main_li"
+  },
+  {
+    "name": "team",
+    "label": "People",
+    "iconClass": "mdi mdi-account-group",
+    "link": "team.html",
+    "notParent": "main_li"
+  },
+  {
+    "name": "calendar",
+    "label": "Locations",
+    "iconClass": "flaticon-international",
+    "link": "calendar.html",
+    "notParent": "main_li"
+  },
+  {
+    "name": "email",
+    "label": "Dealers",
+    "iconClass": "flaticon-delears1",
+    "child": [
+      {
+        "name": "email-inbox",
+        "label": "Email Inbox",
+        "link": "email-inbox.html"
+      },
+      {
+        "name": "email-details",
+        "label": "Email Details",
+        "link": "email-details.html"
+      },
+      {
+        "name": "email-compose",
+        "label": "Email Compose",
+        "link": "email-compose.html"
+      }
+    ]
+  },
+  {
+    "name": "checklist",
+    "label": "Checklist",
+    "iconClass": "flaticon-testing",
+    "link": "checklist.html",
+    "notParent": "main_li"
+  },
+  {
+    "name": "traffic-control",
+    "label": "Traffic control",
+    "iconClass": "flaticon-traffic-light",
+    "link": "traffic-control.html",
+    "notParent": "main_li"
+  },
+  {
+    "name": "charts",
+    "label": "Reports",
+
+    "iconClass": "mdi mdi-chart-pie",
+    "child": [
+      {
+        "name": "apex-charts",
+        "label": "Apex Charts",
+        "link": "apex-charts.html"
+      }
+    ]
+  }
+]
