@@ -31,7 +31,7 @@
     "bootstrap-admin-dashboard",
     "jekyll"
   ],
-  /*"scripts": {
+  "scripts": {
     "start": "npm-run-all --parallel serve css:watch",
     "demo": "npm-run-all --parallel serve:demo css:watch",
     "demo:build": "npm-run-all build:demo css",
@@ -41,15 +41,15 @@
     "build:demo": "bundle exec jekyll build --config _config.yaml,_config.demo.yaml",
     "dist": "npm-run-all clean:dist build css:build site:copy",
     "dist:demo": "npm-run-all clean:dist build:demo css:build site:copy",
-    "clean:dist": "rm -rf dist",
+    /*"clean:dist": "rm -rf dist",*/ 
     "css": "node-sass src/assets/scss/mono.scss _site/assets/css/mono.css --source-map true && npm run rtl",
     "css:watch": "npm run css && node-sass -w src/assets/scss/mono.scss _site/assets/css/mono.css --source-map true",
     "css:prod": "node-sass src/assets/scss/mono.scss _site/assets/css/mono.min.css --output-style=compressed && npm run rtl:prod",
     "rtl": "rtlcss _site/assets/css/mono.css",
     "rtl:prod": "rtlcss _site/assets/css/mono.min.css",
-    "css:build": "npm-run-all css css:prod",
-    "site:copy": "cp -rf _site/ dist/ && cp -r src/assets/scss/ dist/assets/scss/"
-  },*/
+    "css:build": "npm-run-all css css:prod"
+    /*"site:copy": "cp -rf _site/ dist/ && cp -r src/assets/scss/ dist/assets/scss/" */
+  },
   
   "dependencies": {
     "bootstrap": "^4.3.1"
