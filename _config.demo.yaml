@@ -1,6 +1,6 @@
 # https://jekyllrb.com/docs/configuration/options/
 
-environment: demo
+# environment: demo
 
-exclude:
-  - assets/scss
+# exclude:
+  #- assets/scss */
