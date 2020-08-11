@@ -31,7 +31,7 @@
     "bootstrap-admin-dashboard",
     "jekyll"
   ],
-  "scripts": {
+  /*"scripts": {
     "start": "npm-run-all --parallel serve css:watch",
     "demo": "npm-run-all --parallel serve:demo css:watch",
     "demo:build": "npm-run-all build:demo css",
@@ -49,7 +49,8 @@
     "rtl:prod": "rtlcss _site/assets/css/mono.min.css",
     "css:build": "npm-run-all css css:prod",
     "site:copy": "cp -rf _site/ dist/ && cp -r src/assets/scss/ dist/assets/scss/"
-  },
+  },*/
+  
   "dependencies": {
     "bootstrap": "^4.3.1"
   },
